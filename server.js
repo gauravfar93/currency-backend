@@ -6,7 +6,7 @@ import averageRoute from "./src/routes/average.js";
 import slippageRoute from "./src/routes/slippage.js";
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
